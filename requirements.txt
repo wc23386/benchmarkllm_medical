@@ -1,0 +1,10 @@
+pandas
+numpy
+jupyter
+transformers
+torch
+scikit-learn
+accelerate>=0.26.0
+datasets
+tqdm 
+ipykernel # for jupyter notebook
