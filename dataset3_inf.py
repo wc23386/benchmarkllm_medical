@@ -3,7 +3,7 @@ from datasets import load_dataset
 
 
 # Load the dataset
-dataset = load_dataset('json', data_files={'test': '/Users/wcchang/Documents/llm_distillation/matched_llama_dataset.jsonl'})
+dataset = load_dataset('json', data_files={'test': './llm_distillation/matched_llama_dataset.jsonl'})
 print(dataset)
 
 # Inference with batching and progress bar

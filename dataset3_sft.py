@@ -25,8 +25,8 @@ def json_to_df(json_file_path):
 
     df = pd.DataFrame({'question': question_list, f'{llm_model}_response': response_list})
     return df
-gpt_df = json_to_df('/Users/wcchang/Documents/llm_distillation/dataset3_gpt_qa_pairs.jsonl')
-llama_df = json_to_df('/Users/wcchang/Documents/llm_distillation/matched_llama_dataset.jsonl')
+gpt_df = json_to_df('./llm_distillation/dataset3_gpt_qa_pairs.jsonl')
+llama_df = json_to_df('./llm_distillation/matched_llama_dataset.jsonl')
 # print(gpt_df.columns, gpt_df.shape, '\n', llama_df.columns, llama_df.shape)
 # Merge two dataframes, ['question', 'gpt_response', 'llama_response']
 combined_df = pd.merge(gpt_df, llama_df, on='question', how='left')
